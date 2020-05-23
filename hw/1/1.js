@@ -8,9 +8,15 @@ function Product(M1, M2) {
     }
     let result = [], oneRow = [], temp = 0;
 <<<<<<< HEAD
+<<<<<<< HEAD
     for (let row = 0; row < M1.length; row++) { // O(W1)
         for (let col = 0; col < M2[0].length; col++) { // O(W2)
             for (let c = 0; c < M1[0].length; c++) { // O(H)
+=======
+    for (let row = 0; row < M1.length; row++) {
+        for (let col = 0; col < M2[0].length; col++) {
+            for (let c = 0; c < M1[0].length; c++) {
+>>>>>>> assignment1 finished
 =======
     for (let row = 0; row < M1.length; row++) {
         for (let col = 0; col < M2[0].length; col++) {
@@ -26,7 +32,11 @@ function Product(M1, M2) {
         temp = 0;
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
     return result; // O(W1*W2*H)
+=======
+    return result;
+>>>>>>> assignment1 finished
 =======
     return result;
 >>>>>>> assignment1 finished
