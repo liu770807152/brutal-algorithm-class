@@ -19,7 +19,7 @@ function shuffle(l, r) {
         return r; // O(1)
     }
     else if (r.length === 0) {
-        return l; // O(1)
+        return l; // O(1)finished
     }
     let pickLeft = Math.floor(Math.random() * l.length);
     let pickRight = Math.floor(Math.random() * r.length);
