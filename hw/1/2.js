@@ -16,11 +16,7 @@ function split(array) {
 
 function shuffle(l, r) {
     if (l.length === 0) {
-<<<<<<< HEAD
         return r; // O(1)
-=======
-        return r;
->>>>>>> working on linked list
     }
     else if (r.length === 0) {
         return l; // O(1)
