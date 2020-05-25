@@ -15,7 +15,7 @@ function split(array) {
 }
 
 function shuffle(l, r) {
-    if (l.length === 0 && r.length != 0) {
+    if (l.length === 0) {
         return r;
     }
     else if (r.length === 0) {
