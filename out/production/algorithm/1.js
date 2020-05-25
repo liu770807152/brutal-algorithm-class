@@ -7,9 +7,9 @@ function Product(M1, M2) {
         throw new Error("These matrixes cannot be multiplied!");
     }
     let result = [], oneRow = [], temp = 0;
-    for (let row = 0; row < M1.length; row++) { // O(W1)
-        for (let col = 0; col < M2[0].length; col++) { // O(W2)
-            for (let c = 0; c < M1[0].length; c++) { // O(H)
+    for (let row = 0; row < M1.length; row++) {
+        for (let col = 0; col < M2[0].length; col++) {
+            for (let c = 0; c < M1[0].length; c++) {
                 temp += M1[row][c] * M2[c][col];
             }
             oneRow.push(temp);
@@ -19,11 +19,7 @@ function Product(M1, M2) {
         oneRow = [];
         temp = 0;
     }
-<<<<<<< HEAD
-    return result; // O(W1*W2*H) finished
-=======
-    return result; // O(W1*W2*H)
->>>>>>> All finished!
+    return result;
 }
 
 /*====================== Testing =========================*/
