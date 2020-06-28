@@ -2,10 +2,10 @@ function mergeShuffle(array) {
     if (array.length <= 1) {
         return array;
     }
-    let [left, right] = split(array);
+    let [left, right] = split(array); // O(n+m)
     let sortLeft = mergeShuffle(left);
     let sortRight = mergeShuffle(right);
-    let shuffled = shuffle(sortLeft, sortRight);
+    let shuffled = shuffle(sortLeft, sortRight); // O(log(n+m))
     return shuffled;
 }
 
@@ -16,10 +16,10 @@ function split(array) {
 
 function shuffle(l, r) {
     if (l.length === 0) {
-        return r;
+        return r; // O(1)
     }
     else if (r.length === 0) {
-        return l;
+        return l; // O(1)
     }
     let pickLeft = Math.floor(Math.random() * l.length);
     let pickRight = Math.floor(Math.random() * r.length);
@@ -37,7 +37,7 @@ function shuffle(l, r) {
         shuffled = shuffled.concat(lTemp);
         shuffled = shuffled.concat(rTemp);
     }
-    shuffled = shuffled.concat(shuffle(l, r));
+    shuffled = shuffled.concat(shuffle(l, r)); // O(log(n+m))
     return shuffled;
 }
 
