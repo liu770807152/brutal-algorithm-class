@@ -19,10 +19,14 @@ let dir1 = new Dir('dir1', [f1, f2, dir2])      // 2
 let dir3 = new Dir('dir3')                      // 2
 let root = new Dir('root', [dir1, dir3])        // 3
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
     
 >>>>>>> tut2
+=======
+
+>>>>>>> tut update
 function dfs(node) {
     if (!node.files) {
         return [{ "name": node.name, "layer": 0 }];
@@ -45,6 +49,7 @@ function dfs(node) {
 let path = dfs(root)
 for (let e of path) {
 <<<<<<< HEAD
+<<<<<<< HEAD
     let c = "";
     c += "\t".repeat(path[0].layer - e.layer);
     console.log(c + e.name);
@@ -55,4 +60,9 @@ for (let e of path) {
     }
     console.log(c+e.name);
 >>>>>>> tut2
+=======
+    let c = "";
+    c += "\t".repeat(path[0].layer - e.layer);
+    console.log(c + e.name);
+>>>>>>> tut update
 }

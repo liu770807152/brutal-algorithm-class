@@ -19,11 +19,7 @@ function Product(M1, M2) {
         oneRow = [];
         temp = 0;
     }
-<<<<<<< HEAD
-    return result; // O(W1*W2*H) finished
-=======
     return result; // O(W1*W2*H)
->>>>>>> All finished!
 }
 
 /*====================== Testing =========================*/
